@@ -26,8 +26,8 @@ demoApp.directive('someOtherDirective', ['$log',
 ]);
 
 
-demoApp.controller('PanelCtrl', ['$scope', '$log',
-  function ($scope, $log) {
+demoApp.controller('PanelCtrl', ['$scope', '$interval', '$log',
+  function ($scope, $interval, $log) {
 
     $log.debug('PanelCtrl setup...');
 
