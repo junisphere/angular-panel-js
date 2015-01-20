@@ -1,0 +1,27 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <div class="pull-right">
+
+            <a href="" ng-click="onRefreshClicked()">
+                <span class="ab-glyphicon-color glyphicon glyphicon-refresh"></span>
+            </a>
+
+            <a href="" ng-click="onEditClicked()">
+                <span class="ab-glyphicon-color glyphicon glyphicon-cog"></span>
+            </a>
+            <a href="" ng-click="onCollapseClicked()">
+        <span
+                class="ab-glyphicon-color glyphicon {{ panelModel.collapsed ? 'glyphicon-plus' : 'glyphicon-minus' }}"></span>
+            </a>
+
+            <a href="" ng-click="onRemoveClicked()">
+                <span style="margin-left: 20px;" class="ab-glyphicon-color glyphicon glyphicon-remove"></span>
+            </a>
+
+        </div>
+        <!-- Order does matter here - title must come as last -->
+        <h3 class="panel-title">{{panelModel.title}}</h3>
+    </div>
+
+
+</div>
