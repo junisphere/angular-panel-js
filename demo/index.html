@@ -34,18 +34,18 @@
 
         <h1 class="text-center">Angular Bootstrap Panel Demo</h1>
 
-        <ab-panel panel-model="panel0" panel-collapse="panelCollapse()" panel-edit="panelEdit()"
+        <ab-panel panel-model="panel0" panel-edit="panelEdit()"
                   panel-refresh="panelRefresh()" panel-remove="panelRemove()" style="margin: 10px;">
-            <ab-panel-body>
-                <nvd3 options="options" data="data"></nvd3>
+            <ab-panel-body ng-hide="panel0.collapsed">
+            <nvd3 options="options" data="data"></nvd3>
             </ab-panel-body>
         </ab-panel>
 
 
-      <ab-panel panel-model="panel1" panel-collapse="panelCollapse()" panel-edit="panelEdit()"
+        <ab-panel panel-model="panel1" panel-edit="panelEdit()"
                   panel-refresh="panelRefresh()" panel-remove="panelRemove()" style="margin: 10px;">
-            <ab-panel-body>
-              <some-other-directive display-text="panel1.content"></some-other-directive>
+            <ab-panel-body ng-hide="panel1.collapsed">
+            <some-other-directive display-text="panel1.content"></some-other-directive>
             </ab-panel-body>
         </ab-panel>
 
@@ -66,7 +66,7 @@
                     <div class="col-sm-offset-2 col-sm-10">
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" ng-model="panel.collapsed">Collapse
+                                <input type="checkbox" ng-model="panel1.collapsed">Collapse
                             </label>
                         </div>
                     </div>

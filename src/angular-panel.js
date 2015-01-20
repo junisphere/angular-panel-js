@@ -15,7 +15,6 @@
         replace: true,
         scope: {
           panelModel: '=',
-          collapse: '&?panelCollapse',
           onRefreshClicked: '&?panelRefresh',
           onEditClicked: '&?panelEdit',
           onRemoveClicked: '&?panelRemove'
@@ -31,7 +30,6 @@
 
           scope.onCollapseClicked = function () {
             scope.panelModel.collapsed = !scope.panelModel.collapsed;
-            scope.collapse(scope.panelModel.collapsed);
           };
 
         }
@@ -50,6 +48,7 @@
           var bodyContents = iElement.html();
 
           iElement.html($compile($templateCache.get('templates/ab-panel/panelbody.tpl.html'))(scope));
+          $log.debug(scope);
           iElement.children().append($compile(bodyContents)(scope));
 
         }

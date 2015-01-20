@@ -42,13 +42,6 @@ demoApp.controller('PanelCtrl', ['$scope', '$log',
       content: 'The panel\'s content is another directive.'
     };
 
-    $scope.panelCollapse = function (newValue) {
-      if (newValue) {
-        $scope.panel.collapsed = newValue;
-        $log.debug('toggle collapse: ' + newValue);
-      }
-      return $scope.panel.collapsed;
-    };
 
     $scope.panelEdit = function () {
       alert('Edit');
