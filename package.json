@@ -1,9 +1,9 @@
 {
-  "name": "angular-panel",
+  "name": "angular-panel-js",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/abuechler/angular-panel"
+    "url": "https://github.com/junisphere/angular-panel-js"
   },
   "devDependencies": {
     "grunt": "~0.4.5",

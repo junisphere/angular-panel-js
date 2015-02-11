@@ -1,27 +1,27 @@
 <div class="panel panel-primary">
-    <div class="panel-heading">
-        <div class="pull-right">
+  <div class="panel-heading">
+    <div class="pull-right">
 
-            <a href="" ng-click="onRefreshClicked()">
-                <span class="ab-glyphicon-color glyphicon glyphicon-refresh"></span>
-            </a>
+      <a href="" ng-click="onRefreshClicked()" title="{{'LABEL_PANEL_HEADER_ICON_REFRESH' | translate}}">
+        <span class="ab-glyphicon-color glyphicon glyphicon-refresh"></span>
+      </a>
 
-            <a href="" ng-click="onEditClicked()">
-                <span class="ab-glyphicon-color glyphicon glyphicon-cog"></span>
-            </a>
-            <a href="" ng-click="onCollapseClicked()">
+      <a href="" ng-click="onEditClicked()" title="{{'LABEL_PANEL_HEADER_ICON_SETTINGS' | translate}}">
+        <span class="ab-glyphicon-color glyphicon glyphicon-cog"></span>
+      </a>
+      <a href="" ng-click="onCollapseClicked()" title="{{'LABEL_PANEL_HEADER_ICON_COLLAPSE' | translate}}">
         <span
-                class="ab-glyphicon-color glyphicon {{ panelModel.collapsed ? 'glyphicon-plus' : 'glyphicon-minus' }}"></span>
-            </a>
+          class="ab-glyphicon-color glyphicon {{ panelModel.collapsed ? 'glyphicon-plus' : 'glyphicon-minus' }}"></span>
+      </a>
 
-            <a href="" ng-click="onRemoveClicked()">
-                <span style="margin-left: 20px;" class="ab-glyphicon-color glyphicon glyphicon-remove"></span>
-            </a>
+      <a href="" ng-click="onRemoveClicked()" title="{{'LABEL_PANEL_HEADER_ICON_REMOVE' | translate}}">
+        <span style="margin-left: 20px;" class="ab-glyphicon-color glyphicon glyphicon-remove"></span>
+      </a>
 
-        </div>
-        <!-- Order does matter here - title must come last -->
-        <h3 class="panel-title">{{panelModel.title}}</h3>
     </div>
+    <!-- Order does matter here - title must come last -->
+    <h3 class="panel-title">{{panelModel.title}}</h3>
+  </div>
 
 
 </div>

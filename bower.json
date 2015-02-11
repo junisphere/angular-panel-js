@@ -1,15 +1,15 @@
 {
-  "name": "angular-panel",
+  "name": "angular-panel-js",
   "main": [
     "dist/angular-panel.min.js",
     "dist/angular-panel.css"
   ],
   "version": "0.0.1",
-  "homepage": "https://github.com/abuechler/angular-panel",
+  "homepage": "https://github.com/junisphere/angular-panel-js",
   "author": {
-    "name": "https://github.com/abuechler/angular-panel/graphs/contributors"
+    "name": "https://github.com/junisphere/angular-panel-js/graphs/contributors"
   },
-  "description": "AngularJS version of Bootstrap Panel",
+  "description": "Junisphere AngularJS version of angular-panel/Bootstrap Panel",
   "license": "MIT",
   "ignore": [
     "**/.*",
